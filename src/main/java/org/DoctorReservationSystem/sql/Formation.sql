@@ -47,7 +47,7 @@ CREATE TABLE Reservation (
     PatientID INT,
     DoctorID INT,
     ClinicID INT,
-    ReservationDateTime DATETIME,
+    ReservationDateTime TIMESTAMP,
     Reason TEXT,
     FOREIGN KEY (PatientID) REFERENCES Patient(PatientID),
     FOREIGN KEY (DoctorID) REFERENCES Doctor(DoctorID),
